@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+</head>
+<link rel="stylesheet" type="text/css" href="cal.css">
+<body>
+<div id="container">
+  <h1>Tip Calculator</h1>
+  <div id="Calculator">
+      <p>How much was your bill?
+        <p>
+          Rs. <input id="amt" type="text" placeholder="Bill Amount">
+
+          <p>How was your service?
+            <p>
+              <select id="qual">
+            <option disabled selected value="0">-- Choose an Option --</option>
+            <option value="0.3"> Outstanding</option>
+            <option value="0.2"> Good</option>
+            <option value="0.15"> It was OK</option>
+            <option value="0.1">Bad</option>
+        </select>
+
+   
+    <p>How many people are sharing the bill?</p>
+    <input id="pplamt" type="text" placeholder="Number of People"> people
+    <button type="button" id="calculate">Calculate!</button>
+
+  </div>
+  <div id="totalTip">
+    Rs=<span id="tip">0.00</span>
+    <small id="each">each</small>
+  </div>
+
+
+</div>
+
+<script src="jquery.js"></script>
+<script type="text/javascript" src="calc.js"></script>
+</body>
+</html>
